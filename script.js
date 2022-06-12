@@ -14,7 +14,7 @@ $(document).ready(function () {
   })(jQuery);
 
   // input text for typing animation
-  $("#holder").writeText("ELECTRONICS | SOFTWARE | TECH");
+  $("#holder").writeText("TECH + ELECTRONICS + SOFTWARE");
 
   // initialize wow.js
   new WOW().init();
@@ -77,12 +77,12 @@ $(document).ready(function () {
 
   $("#fullpage").fullpage({
     scrollBar: true,
-    responsiveWidth: 500,
+    responsiveWidth: 750,
     navigation: true,
-    navigationTooltips: ["home", "about", "portfolio", "contact", "connect"],
-    anchors: ["home", "about", "portfolio", "contact", "connect"],
+    navigationTooltips: ["home", "about", "qualification","portfolio", "contact", "connect"],
+    anchors: ["home", "about", "qualification", "portfolio", "contact", "connect"],
     menu: "#myMenu",
-    fitToSection: false,
+    fitToSection: true,
 
     afterLoad: function (anchorLink, index) {
       var loadedSection = $(this);
@@ -114,7 +114,7 @@ $(document).ready(function () {
               {
                 width: $(this).attr("data-percent")
               },
-              2500
+              1000
             );
         });
       }
@@ -131,16 +131,20 @@ $(document).ready(function () {
     $.fn.fullpage.moveTo(2);
   });
 
-  $(document).on("click", "#projects", function () {
+  $(document).on("click", "#qualification", function () {
     $.fn.fullpage.moveTo(3);
   });
 
-  $(document).on("click", "#contact", function () {
+  $(document).on("click", "#projects", function () {
     $.fn.fullpage.moveTo(4);
+  });
+
+  $(document).on("click", "#contact", function () {
+    $.fn.fullpage.moveTo(5);
   });
   
   $(document).on("click", "#home", function () {
-    $.fn.fullpage.moveTo(4);
+    $.fn.fullpage.moveTo(1);
   });
 
   // smooth scrolling
