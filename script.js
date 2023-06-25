@@ -77,7 +77,7 @@ $(document).ready(function () {
 
   $("#fullpage").fullpage({
     scrollBar: true,
-    responsiveWidth: 750,
+    responsiveWidth: 500,
     navigation: true,
     navigationTooltips: ["home", "about", "qualification","portfolio", "contact", "connect"],
     anchors: ["home", "about", "qualification", "portfolio", "contact", "connect"],
@@ -114,7 +114,7 @@ $(document).ready(function () {
               {
                 width: $(this).attr("data-percent")
               },
-              1000
+              500
             );
         });
       }
@@ -135,7 +135,7 @@ $(document).ready(function () {
     $.fn.fullpage.moveTo(3);
   });
 
-  $(document).on("click", "#projects", function () {
+  $(document).on("click", "#portfolio", function () {
     $.fn.fullpage.moveTo(4);
   });
 
@@ -143,10 +143,14 @@ $(document).ready(function () {
     $.fn.fullpage.moveTo(5);
   });
   
+  $(document).on("click", "#connect", function () {
+    $.fn.fullpage.moveTo(6);
+  });
+  
   $(document).on("click", "#home", function () {
     $.fn.fullpage.moveTo(1);
   });
-
+  
   // smooth scrolling
   $(function () {
     $("a[href*=#]:not([href=#])").click(function () {
@@ -164,7 +168,7 @@ $(document).ready(function () {
             {
               scrollTop: target.offset().top
             },
-            700
+            800
           );
           return false;
         }
