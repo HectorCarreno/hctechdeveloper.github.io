@@ -151,7 +151,7 @@ p {
 /* nav header links */
 
 .nav-brand {
-  position: fixed;
+  position:fixed;
   background-color: transparent;
   left: 0;
   z-index: 600;
@@ -159,7 +159,7 @@ p {
 }
 
 .nav-brand img {
-  width: 50px;
+  width: 60px;
 }
 
 .fa-bars {
@@ -184,6 +184,7 @@ p {
 
 .header-links {
   position: fixed;
+  height: 40px;
   width: 100%;
   z-index: 500;
 }
@@ -279,7 +280,7 @@ p {
 }
 
 .aboutme {
-  background: url("https://webcoverletterbucket.s3.us-west-2.amazonaws.com/wallpaper_webimages.png") no-repeat;
+  background: url("https://webcoverletterbucket.s3.us-west-2.amazonaws.com/images/wallpaper_webimages.png") no-repeat;
   background-size: cover;
 }
 
@@ -639,7 +640,7 @@ label {
   }
 
   .aboutme h1 {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 
