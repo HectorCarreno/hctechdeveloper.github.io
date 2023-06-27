@@ -291,34 +291,37 @@
           <div class="contact-form">
             <div id="form-messages">
               <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+                <!-- Name cell --->
                 <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.4s">
                   <input type="text" class="form-control" id="name" name="name" placeholder="NAME"
                     data-error="Field can't be blank!" required>
                   <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                   <div class="help-block with-errors"></div>
                 </div>
-
+                <!-- Email address cell --->
                 <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.75s">
                   <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL"
                     data-error="Field can't be blank!" required>
                   <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                   <div class="help-block with-errors"></div>
                 </div>
-
+                <!-- Message box --->
                 <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
                   <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE"
                     data-error="Minimum of 10 characters" required></textarea>
                   <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                   <div class="help-block with-errors"></div>
                 </div>
+                <!-- Human (hidden) -->
                 <div class="hidden">
                   <input type="text" class="form-control" id="human" name="human" placeholder="">
                 </div>
+                <!-- Button -->
                 <div class="wow fadeInUp" data-wow-delay="0.5s">
                   <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
                 </div>
-                <br>
               </form>
+              <br>
             </div>
           </div>
 
@@ -345,7 +348,8 @@
     <!-- end fullpage -->
   </body>
   <!-- partial -->
-  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+  <!-- <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
